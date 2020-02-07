@@ -1,0 +1,23 @@
+/* RESET */
+ * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth
+}
+
+article.nível-dois{
+    /* border: 1px dashed red; */
+display: inline-block;
+width: 45%;
+margin: 20px;
+padding: 10px;
+}
+ul li ul{
+    list-style: none;
+}
+ol,
+ul[type="circle"]{
+    margin-left: 20px
+    
+}
