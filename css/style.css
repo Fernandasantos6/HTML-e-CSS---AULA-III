@@ -10,7 +10,15 @@ a{
     text-decoration: none;
     color: inherit;
     font-weight: bold;
+    transition: all 0.8s ease-in-out;
 }
+a:hover {
+    color:red;
+}
+h1 {
+    font-family: 'Raleway', sans-serif;
+}
+
 .fas.fa-phone{
     transform: rotate(90deg);
 }
@@ -18,11 +26,17 @@ header,
 main { 
     padding: 30px;
 }
-header ul{
-display: block;
+header,
+footer {
+    background-color: rgb(221, 187, 213);
 }
-
-header ul li{
+header ul{
+    /* float: right; */
+    display: block;
+    margin-top: 20px;
+}
+header ul li,
+footer ul li {
     display: inline-block;
     margin: 5px;
 }
@@ -36,36 +50,28 @@ header img{
     border-radius: 50%;
     border: 1px solid red;
     transition: all 0.8s ease-in-out;
-    margin-top: 20px
+    margin-top: 20px;
+    filter: drop-shadow(5px 5px 5px rgb(63, 63, 63)); /* Sombra na foto */
 }
 header img :hover{
     border-radius: o;
-
+     /* border: 2px dashed blue; */
 }
 
 article.nivel-dois{
     /* border: 1px dashed red; */
 display: inline-block;
-width: 240px;
+width: 45%;
 margin: 20px;
-padding: 10px;
-background-color: lightcoral;							 
+padding: 10px;			 
 }
 ul li ul{
     list-style: none;
 }
-
-article.case{
-    /* border: 1px dashed red; */
-display: inline-block;
-width: 240px;
-margin: 20px;
-padding: 10px;						 
-}
-
 ol,
-ul[type="circle"]{
-    margin-left: 20px
+ul[type="circle"] {
+    /* border:2px solid black; */
+    padding-left: 20px;
 }
 h2{
     margin:20px auto;
@@ -73,9 +79,10 @@ h2{
     color: rgb(18, 18, 145);
 }
 .case{
-    border: 1px; 
-    width: 100%;
+    border: 1px solid lightblue; 
+    width: calc(33% - 20px);
     display: inline-block;
+    border-radius: 5px;
 }
 .case img{
     width: 100%;
@@ -84,8 +91,31 @@ h2{
     line-height: 24px;
     font-size: 16px;
 }
+.case button {
+    background-color:#0c3fad;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px auto;
+    display: block;
+    border: none;
+    border-radius: 6px;
+    line-height: 48px;
+    font-size: 24px;
+}    
 footer ul{
     display: block;
     margin: 0 auto;
     padding: 20px;    
 }
+body::-webkit-scrollbar {
+    width: 1em;
+  }
+ 
+ body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(128, 128, 128, 0.863);
+  }
+ body::-webkit-scrollbar-thumb {
+    background-color: rgb(90, 3, 78);
+    outline: 1px solid rgb(5, 64, 122);
+  }
