@@ -15,8 +15,12 @@ a{
 a:hover {
     color:red;
 }
-h1 {
+header h1 {
     font-family: 'Raleway', sans-serif;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 100%;
+
 }
 
 .fas.fa-phone{
@@ -30,10 +34,21 @@ header,
 footer {
     background-color: rgb(221, 187, 213);
 }
+header{ /* para colocar a imagem no cabeçalho do cv*/
+    background-image: url("../img/download.png");
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+}
 header ul{
     /* float: right; */
-    display: block;
+    display: flex;
     margin-top: 20px;
+    order: 0;
+    flex: 1 0 auto;
+    justify-content: flex-end;
 }
 header ul li,
 footer ul li {
@@ -52,10 +67,12 @@ header img{
     transition: all 0.8s ease-in-out;
     margin-top: 20px;
     filter: drop-shadow(5px 5px 5px rgb(63, 63, 63)); /* Sombra na foto */
+    
 }
 header img :hover{
     border-radius: o;
      /* border: 2px dashed blue; */
+     
 }
 
 article.nivel-dois{
